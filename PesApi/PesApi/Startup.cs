@@ -15,8 +15,6 @@ using Pes.Repositories;
 using Pes.Services;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
-using Pes.Bll.Mappings;
-using Pes.Bll.Services;
 
 namespace PesApi
 {
@@ -32,7 +30,7 @@ namespace PesApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            _loadAutomapper(services);
+            services.AddAutoMapper();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             _addRepositories(services);
             _addServices(services);
@@ -58,7 +56,6 @@ namespace PesApi
             services.AddTransient<IGameService, GameService>();
             services.AddTransient<IOpponentService, OpponentService>();
             services.AddTransient<IUserService, UserService>();
-            services.AddTransient<IUserBetService, UserBetService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -75,14 +72,6 @@ namespace PesApi
 
             app.UseHttpsRedirection();
             app.UseMvc();
-        }
-        private void _loadAutomapper(IServiceCollection services)
-        {
-            Mapper.Initialize(cfg =>
-            {
-                cfg.AddProfile(new AutoMapperConfig());
-            });
-            services.AddAutoMapper();
         }
     }
 }

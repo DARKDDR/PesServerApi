@@ -441,6 +441,7 @@
       "Pes/1.0.0": {
         "dependencies": {
           "AutoMapper": "7.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "5.0.1",
           "Microsoft.EntityFrameworkCore": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
           "Pomelo.EntityFrameworkCore.MySql": "2.1.2",

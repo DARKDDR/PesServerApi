@@ -4419,23 +4419,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
-      },
-      "Pes/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "dependencies": {
-          "AutoMapper": "7.0.1",
-          "Microsoft.EntityFrameworkCore": "2.1.2",
-          "Microsoft.NETCore.App": "2.1.0",
-          "Pomelo.EntityFrameworkCore.MySql": "2.1.2",
-          "Pomelo.EntityFrameworkCore.MySql.Design": "1.1.2"
-        },
-        "compile": {
-          "bin/placeholder/Pes.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Pes.dll": {}
-        }
       }
     }
   },
@@ -11714,44 +11697,39 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
-    },
-    "Pes/1.0.0": {
-      "type": "project",
-      "path": "../../../EntityBDDPES/EntityBDDPES/Pes.csproj",
-      "msbuildProject": "../../../EntityBDDPES/EntityBDDPES/Pes.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "AutoMapper >= 7.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 5.0.1",
+      "C:\\Users\\Desktop\\EntityBDDPES\\EntityBDDPES\\Pes.csproj",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.EntityFrameworkCore >= 2.1.2",
       "Microsoft.EntityFrameworkCore.Tools >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Pes >= 1.0.0",
       "Pomelo.EntityFrameworkCore.MySql >= 2.1.2",
       "Pomelo.EntityFrameworkCore.MySql.Design >= 1.1.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jimmy\\.nuget\\packages\\": {},
+    "C:\\Users\\DDR\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jimmy\\Desktop\\Projet\\PesApi\\PesApi\\PesApi.csproj",
+      "projectUniqueName": "C:\\Users\\DDR\\Desktop\\PesApi\\PesApi\\PesApi.csproj",
       "projectName": "PesApi",
-      "projectPath": "C:\\Users\\Jimmy\\Desktop\\Projet\\PesApi\\PesApi\\PesApi.csproj",
-      "packagesPath": "C:\\Users\\Jimmy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jimmy\\Desktop\\Projet\\PesApi\\PesApi\\obj\\",
+      "projectPath": "C:\\Users\\DDR\\Desktop\\PesApi\\PesApi\\PesApi.csproj",
+      "packagesPath": "C:\\Users\\DDR\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DDR\\Desktop\\PesApi\\PesApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jimmy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DDR\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11764,8 +11742,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Jimmy\\Desktop\\EntityBDDPES\\EntityBDDPES\\Pes.csproj": {
-              "projectPath": "C:\\Users\\Jimmy\\Desktop\\EntityBDDPES\\EntityBDDPES\\Pes.csproj"
+            "C:\\Users\\Desktop\\EntityBDDPES\\EntityBDDPES\\Pes.csproj": {
+              "projectPath": "C:\\Users\\Desktop\\EntityBDDPES\\EntityBDDPES\\Pes.csproj"
             }
           }
         }
@@ -11824,5 +11802,16 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Projet 'C:\\Users\\Desktop\\EntityBDDPES\\EntityBDDPES\\Pes.csproj' introuvable. Vérifiez que la référence de projet est valide et que le fichier projet existe.",
+      "libraryId": "C:\\Users\\Desktop\\EntityBDDPES\\EntityBDDPES\\Pes.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }
